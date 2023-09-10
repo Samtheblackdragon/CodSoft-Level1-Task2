@@ -32,8 +32,9 @@ section {
 
 
 header {
-    color: white;
-    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: bolder;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
     width: 100%;
     position: sticky;
     top: 0;
@@ -73,7 +74,7 @@ header .navbar  a{
 }
 
 .navbar a:hover::before{
-    border-color: white;
+    border-color: black;
     width:50%;
 }
 
@@ -241,9 +242,13 @@ table td{
 
 /* Projects Section CSS */
 
+
+
+
 #proj {
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
 }
 
 #proj h1 {
@@ -266,7 +271,7 @@ table td{
     background-color: white;
     color: #000000;
     border-radius: 20px;
-    width: 30%;
+    width: 40%;
 }
 
 .proj-img img {
@@ -292,6 +297,39 @@ table td{
     border-radius: 10px;
     color: white;
 }
+
+
+
+/* Footer */
+
+.footer-box {
+    background-color: black;
+    padding: 50px;
+}
+
+.social-handles {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.social-handles a{
+    color: white;
+}
+
+.copyright {
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
 
 
 @media(width <= 890px) {
@@ -393,23 +431,10 @@ table td{
         text-align: center;
     }
 
-    /*  */
+    /* Projects Media Query CSS */
 
     .proj {
         width: 90%;
         margin: 0 auto;
     }
 }
-/* 
-@media(width <= 700px) {
-    .intro {
-        font-size: 1.2em;
-    }
-    .intro-cap {
-        width: 100%;
-        font-size: 1.5em;
-    }
-    .intro-img {
-        width: 60%;
-    }
-} */
